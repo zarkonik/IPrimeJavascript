@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Leasing Calc</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Car Leasing Calculator</h1>
+        <div class="content">
+            <div class="car_type">
+                <div class="select-box">
+                    <label>Car type:</label>
+                    <select class="carSelect">
+                        <option value="new">Brand new </option>
+                        <option value="used">Used</option>
+                    </select>
+                </div>
+                <div class="select-box">
+                    <label>Car value ($10,000 - $200,000):</label>
+                    <input type="number" class="inputCar" value="10000" />
+                </div>
+                <input type="range" class="carValueRange" min=10000 step=10000 max=200000 value="10000">
+
+            </div>
+            <div class="car_type">
+                <div class="select-box">
+                    <label>Lease Period (months):</label>
+                    <select class="leaseSelect">
+
+                    </select>
+                </div>
+                <div class="select-box">
+                    <label>Down Payment (10% - 50%):</label>
+                    <input type="number" class="inputPayment" value="10" />
+                </div>
+                <input type="range" class="downPayment" min=10 step=5 max=50 value="10">
+
+            </div>
+        </div>
+        <hr />
+        <div class="leasingDetails">
+            <h2>Leasing details</h2>
+            <div class="content leasing">
+                <div class="leasingContainer">
+                    <span>Total Leasing Cost: $ <span class="totalCost"></span></span>
+                    <span>Down Payment: $ <span class="downPaymentSpan"></span></span>
+                </div>
+                <div class="leasingContainer">
+                    <span>Monthly Installment: $ <span class="monthlyInstallment"></span></span>
+                    <span>Interest Rate: <span class="interestRate"></span>%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="carLease.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_type{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.select-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    height: 30%;
+}
+
+select, input[type="number"]{
+    width: 100%;
+    height: 50%;
+}
+hr{
+    width: 100%;
+}
+
+.leasingDetails{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content.leasing{
+    height: 70%;
+}
+
+.leasingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    gap: 5%;
+    height: 100%;
+    width: 50%;
+}
+
+.leasingContainer:first-child{
+    padding-left: 0;
+    width: 50%;
+    border-right: 1px solid gray;
+}
+
+@media(max-width: 650px){
+    .content{
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .car_type{
+        width: 100%;
+    }
+
+    .leasingContainer{
+        width: 100% !important;
+        padding-left: 0 !important;
+        border-right: none !important;
+    }
+
+}
